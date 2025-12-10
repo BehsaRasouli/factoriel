@@ -22,7 +22,14 @@ namespace test
 
         static void Main(string[] args)
         {
-            Console.WriteLine(facto(4));
+            for (int i = 1; i < 7; i++)
+            {
+                Console.WriteLine($"enter number {i} :");
+                int userInput = int.Parse(Console.ReadLine());
+                Console.WriteLine(facto(userInput));
+            }
+
+
 
         }
     }
